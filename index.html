@@ -24,7 +24,13 @@
         text-align: center;
       }
       img {
-        max-width: 100px;
+        max-width: 600px;
+        margin: 0px auto;
+        display: block;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
       }
       button {
         display: block;
@@ -63,6 +69,28 @@
         color: black;
         background: white;
       }
+      .pink-mushroom {
+        border-radius: 10px;
+        transition: all 150ms ease-in-out;
+      }
+      .pink-mushroom:hover {
+        transform: scale(1.1);
+        filter: contrast(80%);
+      }
+      .grid {
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 600px;
+      }
+      .grid img {
+        width: 88%;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+      .grid img:hover {
+        transform: scale(1.1);
+      }
     </style>
   </head>
   <body>
@@ -70,12 +98,14 @@
     <div class="container">
       <h1>Dreamcore/Weirdcore</h1>
       <h2>reimaging...</h2>
-      <img src="images/dreamcore6.jpeg" alt="" />
-      <img src="images/Dreamcore2.jpeg" alt="" />
-      <img src="images/Dreamcore3.webp" alt="" />
-      <img src="images/Dreamcore4.jpeg" alt="" />
-      <img src="images/Dreamcore5.jpeg" alt="" />
-      <img src="images/dreamcore1.jpeg" alt="" />
+      <a href="https://aesthetics.fandom.com/wiki/Dreamcore" target="_blank">
+        <img src="images/dreamcore6.jpeg" alt="" class="pink-mushroom"
+      /></a>
+      <br />
+      <div class="grid">
+        <img src="images/Dreamcore4.jpeg" alt="" />
+        <img src="images/Dreamcore5.jpeg" alt="" />
+      </div>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Sed adipiscing diam
