@@ -87,9 +87,20 @@
         width: 88%;
         border-radius: 8px;
         object-fit: cover;
+        transition: all 150ms ease-in-out;
       }
       .grid img:hover {
         transform: scale(1.1);
+      }
+      .dark {
+        background: black;
+        color: white;
+      }
+      .dark .container {
+        background: rgba(255, 255, 255, 0.5);
+      }
+      .dark a {
+        color: plum;
       }
     </style>
   </head>
@@ -126,6 +137,11 @@
         tortor aliquam. Lacus luctus accumsan tortor posuere ac ut consequat
         semper viverra. Nunc consequat interdum varius sit amet mattis. Elit sed
         vulputate mi sit amet mauris.
+        <br /><br />
+        📖
+        <a href="https://en.wikipedia.org/wiki/Salsa_(dance)">
+          <strong> Read on Wikipedia </strong>
+        </a>
       </p>
       <a
         href="https://screenshot-media.com/culture/internet-culture/weirdcore-explained/"
@@ -137,5 +153,22 @@
       <!-- add link -->
       Coded by Bess Yang
     </footer>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        body.classList.toggle("dark");
+
+        // if(body.classList.contains("dark")) {
+        //   body.classList.remove("dark");
+        // } else {
+        //   body.classList.add("dark");
+        // }
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
   </body>
 </html>
