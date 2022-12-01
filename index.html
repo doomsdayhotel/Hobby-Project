@@ -16,12 +16,26 @@
           rgb(154, 219, 232) 68.7%,
           rgb(238, 226, 159) 84.8%
         );
+        margin: 30px;
       }
       h1 {
         text-align: center;
+        color: blueviolet;
+        text-shadow: 3px 1px blue;
+        font-size: 36px;
       }
       h2 {
         text-align: center;
+        font-size: 24px;
+        word-spacing: 15px;
+        color: #74c69d;
+        border-style: dashed;
+        border-width: 3px;
+        border-color: #f4d35e;
+        width: fit-content;
+        display: block;
+        margin: 0 auto;
+        padding: 0px 10px;
       }
       img {
         max-width: 600px;
@@ -35,23 +49,25 @@
       button {
         display: block;
         margin: 0 auto;
-        border: 1px solid plum;
-        background: white;
+        background: plum;
+        border: 2px solid plum;
         font-size: 24px;
         border-radius: 6px;
         padding: 10px 15px;
         transition: all 150ms ease-in-out;
       }
       button:hover {
-        background: plum;
+        background: white;
+        border: 2px solid plum;
         cursor: pointer;
       }
       .container {
         max-width: 600px;
         margin: 20px auto;
         background: white;
-        padding: 20px;
+        padding: 20px 20px 50px 20px;
         border-radius: 10px;
+        box-shadow: 0 6px 12px rgb(0 0 0 / 0.2);
       }
       footer {
         text-align: center;
@@ -59,11 +75,10 @@
         font-size: 18px;
       }
       .theme-button {
-        font-size: 10px;
+        font-size: 20px;
         background: black;
+        border: 2px solid black;
         color: white;
-        padding: 5 8px;
-        border: none;
       }
       .theme-button:hover {
         color: black;
@@ -98,9 +113,14 @@
       }
       .dark .container {
         background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 6px 12px rgb(255 255 255 / 0.6)
       }
       .dark a {
         color: plum;
+      }
+      .dark .theme-button {
+        background: white;
+        color: black;
       }
     </style>
   </head>
@@ -108,7 +128,8 @@
     <button class="theme-button">Dark Theme</button>
     <div class="container">
       <h1>Dreamcore/Weirdcore</h1>
-      <h2>reimaging...</h2>
+      <h2>a surrealist aesthetic</h2>
+      <br /><br />
       <a href="https://aesthetics.fandom.com/wiki/Dreamcore" target="_blank">
         <img src="images/dreamcore6.jpeg" alt="" class="pink-mushroom"
       /></a>
@@ -118,29 +139,24 @@
         <img src="images/Dreamcore5.jpeg" alt="" />
       </div>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Sed adipiscing diam
-        donec adipiscing. Amet justo donec enim diam vulputate. In vitae turpis
-        massa sed. Ipsum nunc aliquet bibendum enim. Id volutpat lacus laoreet
-        non curabitur. Urna molestie at elementum eu facilisis sed odio morbi
-        quis. Tellus elementum sagittis vitae et leo duis ut diam quam. Ut etiam
-        sit amet nisl purus in mollis nunc sed. Id leo in vitae turpis massa.
-        Vel quam elementum pulvinar etiam non quam. Risus sed vulputate odio ut
-        enim blandit. Tortor dignissim convallis aenean et tortor at risus
-        viverra adipiscing.
+        <strong>Dreamcore</strong>
+        is a surrealist aesthetic that uses motifs commonly associated with
+        dreams, daydreams or nightmares, portrayed through media such as images,
+        videos and, on occasion, music. Dreamcore shares many similarities with
+        weirdcore; however, it was not made to give you a dread and uneasy
+        feeling Instead, dreamcore focuses on emulating the general feeling of a
+        dream and uses brighter color
         <br />
-        Porttitor lacus luctus accumsan tortor posuere ac. Aliquam malesuada
-        bibendum arcu vitae elementum. Vulputate enim nulla aliquet porttitor
-        lacus. Accumsan tortor posuere ac ut consequat semper viverra nam. Eget
-        sit amet tellus cras adipiscing enim. Sapien et ligula ullamcorper
-        malesuada proin. Egestas tellus rutrum tellus pellentesque eu tincidunt
-        tortor aliquam. Lacus luctus accumsan tortor posuere ac ut consequat
-        semper viverra. Nunc consequat interdum varius sit amet mattis. Elit sed
-        vulputate mi sit amet mauris.
-        <br /><br />
+        <strong>Weirdcore</strong> is a surrealist aesthetic centered around
+        amateur or low-quality photography and/or visual images that have been
+        constructed or edited to convey feelings of confusion, disorientation,
+        dread, alienation, and nostalgia or anemoia. <br /><br />
         📖
-        <a href="https://en.wikipedia.org/wiki/Salsa_(dance)">
-          <strong> Read on Wikipedia </strong>
+        <a
+          href="https://aesthetics.fandom.com/wiki/Weirdcore?so=search"
+          target="_blank"
+        >
+          <strong> Read on Wiki </strong>
         </a>
       </p>
       <a
@@ -151,7 +167,8 @@
     </div>
     <footer>
       <!-- add link -->
-      Coded by Bess Yang
+      Coded by
+      <a href="https://qixinbessyang.com/" target="_blank">Bess Yang</a>
     </footer>
 
     <script>
